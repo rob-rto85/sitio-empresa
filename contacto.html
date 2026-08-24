@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Imprenta Siva</title>
+    <!-- Vinculación del archivo CSS único -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Enlace a Google Fonts para mantener la tipografía uniforme -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado con menú (Clase 'active' ahora en Contacto) -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/img/logo-imprenta.png" alt="Logotipo Oficial de Imprenta Siva">
+            </div>
+            <div class="brand-title">
+                <h1>IMPRENTA SIVA</h1>
+            </div>            
+            <nav class="main-nav" aria-label="Menú principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>            
+        </div>
+    </header>
+
+    <main class="contacto-page">
+        <!-- Título de la Sección -->
+        <section class="page-title">
+            <div class="container">
+                <h2>Ponte en Contacto con Nosotros</h2>
+                <p>Solicita tus cotizaciones de impresión digital, offset o facturación electrónica en segundos.</p>
+            </div>
+        </section>
+
+        <!-- Bloque Principal de Contacto estructurado para Flexbox/Grid -->
+        <section class="contacto-container">
+            <div class="container contacto-grid">
+                
+                <!-- Columna 1: Información de Contacto con los Iconos Requeridos -->
+                <div class="info-contacto">
+                    <h3>Datos de Atención</h3>
+                    <p class="intro-info">Visítanos en nuestras oficinas o comunícate directamente con nuestros asesores autorizados:</p>
+                    
+                    <ul class="lista-datos">
+                        <!-- Dirección con su Icono -->                         
+                        <li>
+                            <img src="assets/img/logo-direccion.png" id="icono-direccion" class="icono-contacto" alt="Icono de dirección física">
+                            <div>
+                                <strong>Dirección:</strong>
+                                <p>AV. Jimmy Anchico y Anne Orejuela.<br>Quinindé - Esmeraldas - Ecuador</p>
+                            </div>
+                        </li>
+
+                        <!-- Teléfonos de WhatsApp con su Icono independiente cada uno -->
+                        <li>
+                            <img src="assets/img/logo-wasap.png" class="icono-contacto" alt="Icono de WhatsApp empresarial">
+                            <div>
+                                <strong>Teléfono Asesor 1:</strong>
+                                <p>098 912 5300</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/logo-wasap.png" class="icono-contacto" alt="Icono de WhatsApp ventas">
+                            <div>
+                                <strong>Teléfono Asesor 2:</strong>
+                                <p>099 800 24439</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/logo-wasap.png" class="icono-contacto" alt="Icono de WhatsApp SRI">
+                            <div>
+                                <strong>Teléfono Asesor 3:</strong>
+                                <p>099 768 9211</p>
+                            </div>
+                        </li>
+
+                        <!-- Correo con su Icono -->
+                        <li>
+                            <img src="assets/img/logo-correo.png" class="icono-contacto" alt="Icono de correo electrónico">
+                            <div>
+                                <strong>E-mail:</strong>
+                                <p><a href="mailto:impre_siva@yahoo.com">impre_siva@yahoo.com</a></p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Horarios sugeridos obligatorios por la rúbrica -->
+                    <div class="horarios-atencion">
+                        <strong>Horarios de Atención:</strong>
+                        <p>Lunes a Viernes: 08:00 AM - 06:00 PM<br>Sábados: 09:00 AM - 01:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Formulario Visual Requerido (Enlazado a la página 404) -->
+                 <div class="formulario-contacto">
+                    <h3>Envíanos un Mensaje</h3>
+                    <!-- El atributo action ahora apunta directamente a tu archivo 404.html -->
+                    <form action="404.html" method="GET">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="Ej. juan@correo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interés:</label>
+                            <select id="servicio" name="servicio">
+                                <option value="sri">Documentos Autorizados SRI</option>
+                                <option value="electronica">Facturación Electrónica</option>
+                                <option value="tarjetas">Tarjetería Fina</option>
+                                <option value="publicidad">Publicidad Impresa</option>
+                                <option value="otros">Otros Trabajos Generales</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Detalles de tu Pedido / Cotización:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí las medidas, cantidad y tipo de material que necesitas..." required></textarea>
+                        </div>
+
+        <!-- Se cambió a type="submit" para que procese el formulario y ejecute la redirección -->
+        <button type="submit" class="btn btn-submit">Enviar Cotización</button>
+    </form>
+</div>
+
+            </div>
+        </section>
+
+        <!-- Sección de Ubicación mediante una Imagen de Mapa -->
+        <section class="mapa-section">
+            <div class="container">
+                <h3>Nuestra Ubicación en Quinindé</h3>
+                <!-- Aquí puedes colocar una captura de Google Maps de la dirección real en Quinindé -->
+                <div class="mapa-placeholder">
+                    <img src="assets/img/mapa-ubicacion.jpg" alt="Mapa de ubicación de Imprenta SIVA en Quinindé, Avenida Jimmy Anchico">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página institucional UTEQ -->
+    <footer class="main-footer">
+        <p>&copy; UTEQ. Practica: Desarrollo y publicación de un sitio empresarial en Azure App Services - 2026 Imprenta SIVA. - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
