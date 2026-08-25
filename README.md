@@ -7,7 +7,9 @@
 * **Año:** 2026
 
 ## Descripción del Proyecto
-Este proyecto consiste en el diseño, maquetación y estructura de un sitio web empresarial para la empresa real **"Imprenta SIVA"**, fundada en la ciudad de Quinindé. El sitio web está desarrollado siguiendo estándares modernos de diseño adaptable y accesibilidad, utilizando exclusivamente tecnologías nativas del lado del cliente.
+Este proyecto consiste en el diseño, maquetación y estructura de un sitio web empresarial para la empresa **"Imprenta SIVA"**,
+fundada en la ciudad de Quinindé. El sitio web está desarrollado siguiendo estándares modernos de diseño adaptable y accesibilidad,
+utilizando exclusivamente tecnologías nativas del lado del cliente.
 
 ## Estructura de Archivos del Proyecto
 ```text
@@ -25,8 +27,10 @@ sitio-empresa/
 
 ## Requisitos Técnicos Implementados
 * **HTML5 Semántico:** Uso estricto de etiquetas de maquetación (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`).
-* **CSS3 Moderno:** Implementación de variables globales (`:root`), modelo de caja, rellenos (`padding`), márgenes (`margin`), sombras y bordes redondeados.
-* **Maquetación Flexible:** Uso de **Flexbox** para componentes lineales como el menú de navegación y **CSS Grid** para la rejilla adaptativa de los catálogos.
+* **CSS3 Moderno:** Implementación de variables globales (`:root`), modelo de caja, rellenos (`padding`), márgenes (`margin`),
+sombras y bordes redondeados.
+* **Maquetación Flexible:** Uso de **Flexbox** para componentes lineales como el menú de navegación y **CSS Grid** para la
+rejilla adaptativa de los catálogos.
 * **Diseño Responsivo:** Adaptación completa a dispositivos móviles mediante `@media queries`.
 * **Accesibilidad:** Uso riguroso de textos alternativos (`alt`) en todas las imágenes.
 * **Interactividad Estática:** Navegación enlazada funcional entre las 5 páginas y uso de pseudoclases (`:hover`).
