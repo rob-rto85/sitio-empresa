@@ -380,31 +380,6 @@ a {
     border-top: 4px solid var(--rojo-acento);
 }
 
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .main-nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-    
-    .hero-content h2 {
-        font-size: 1.8rem;
-    }
-    
-    .hero-content .slogan {
-        font-size: 1rem;
-    }
-    
-    .container {
-        padding: 20px 0;
-    }         
-}
-
 .local-banner {
     position: relative;
     width: 100%;
@@ -518,4 +493,48 @@ a {
 .css-logos-nosotros:hover {
     transform: scale(1.08);
     border-color: var(--rosado-oscuro);
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px; 
+        padding: 10px 0;
+    }
+    
+    .logo img {
+        height: 50px;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .brand-title h1 {
+        font-size: 1.5rem; 
+        text-align: center;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .main-nav a {
+        font-size: 0.95rem;
+        padding: 6px 16px;
+        display: inline-block;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content .slogan {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: 20px 0;
+    }         
 }
