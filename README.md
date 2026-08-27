@@ -25,6 +25,13 @@ sitio-empresa/
     └── img/            # Repositorio de recursos visuales y logotipos corporativos
 ```
 
+## GRUPO 1
+* **Integrantes:** 
+* AGILA CARRILLO MARIA ISABEL
+* INTRIAGO MENDOZA ROBERTO MIGUEL
+* LOPEZ CABEZA RONNY JAVIER
+* NARANJO ALTAMIRANO JACQUELINE DE LOS ANGELES
+* URETA JIMENEZ JESUS DARWIN
 ## Requisitos Técnicos Implementados
 * **HTML5 Semántico:** Uso estricto de etiquetas de maquetación (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`).
 * **CSS3 Moderno:** Implementación de variables globales (`:root`), modelo de caja, rellenos (`padding`), márgenes (`margin`),
