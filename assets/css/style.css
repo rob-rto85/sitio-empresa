@@ -495,34 +495,35 @@ a {
     border-color: var(--rosado-oscuro);
 }
 
-
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        gap: 10px; 
+        gap: 8px; 
         padding: 10px 0;
     }
     
     .logo img {
-        height: 50px;
+        height: 45px;
         width: auto;
         margin: 0 auto;
     }
 
     .brand-title h1 {
-        font-size: 1.5rem; 
+        font-size: 1.4rem; 
         text-align: center;
     }
     
     .main-nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 6px;
+        padding: 0;
     }
 
     .main-nav a {
-        font-size: 0.95rem;
-        padding: 6px 16px;
+        font-size: 0.85rem;
+        padding: 5px 10px;
         display: inline-block;
     }
     
@@ -536,5 +537,31 @@ a {
     
     .container {
         padding: 20px 0;
-    }         
+    }
+
+    /* --- AJUSTES DE ADAPTABILIDAD PARA NOSOTROS --- */
+    .local-banner-text {
+        width: 95%;
+    }
+
+    .local-banner-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .filosofia-grid {
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+    }
+
+    .card-full-width {
+        grid-column: auto;
+    }
+
+    .filosofia-card {
+        padding: 25px 15px;
+    }
+
+    .values-list li {
+        font-size: 0.95rem;
+    }
 }
