@@ -25,8 +25,8 @@ sitio-empresa/
     └── img/            # Repositorio de recursos visuales y logotipos corporativos
 ```
 
-## GRUPO 1
-* **Integrantes:** 
+## GRUPO 1: 
+**Integrantes:** 
 * AGILA CARRILLO MARIA ISABEL
 * INTRIAGO MENDOZA ROBERTO MIGUEL
 * LOPEZ CABEZA RONNY JAVIER
