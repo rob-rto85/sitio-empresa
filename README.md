@@ -1,7 +1,8 @@
 # Práctica: Desarrollo de Sitio Web Empresarial
 
 ## Información Institucional
-* **Institución:** Universidad Técnica Estatal de Quevedo (UTEQ)
+* **Institución:** Imprenta SIVA
+* **Grupo:** Grupo Intriago
 * **Proyecto:** Sitio Web Empresarial Corporativo - Imprenta SIVA
 * **Entorno de Despliegue Target:** Azure App Services
 * **Año:** 2026
@@ -24,14 +25,6 @@ sitio-empresa/
     │   └── style.css   # Hoja de estilos global unificada (Variables, Grid, Flexbox)
     └── img/            # Repositorio de recursos visuales y logotipos corporativos
 ```
-
-## GRUPO 1: 
-**INTEGRANTES:** 
-* AGILA CARRILLO MARIA ISABEL
-* INTRIAGO MENDOZA ROBERTO MIGUEL
-* LOPEZ CABEZA RONNY JAVIER
-* NARANJO ALTAMIRANO JACQUELINE DE LOS ANGELES
-* URETA JIMENEZ JESUS DARWIN
 ## Requisitos Técnicos Implementados
 * **HTML5 Semántico:** Uso estricto de etiquetas de maquetación (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`).
 * **CSS3 Moderno:** Implementación de variables globales (`:root`), modelo de caja, rellenos (`padding`), márgenes (`margin`),
@@ -41,8 +34,3 @@ rejilla adaptativa de los catálogos.
 * **Diseño Responsivo:** Adaptación completa a dispositivos móviles mediante `@media queries`.
 * **Accesibilidad:** Uso riguroso de textos alternativos (`alt`) en todas las imágenes.
 * **Interactividad Estática:** Navegación enlazada funcional entre las 5 páginas y uso de pseudoclases (`:hover`).
-
-## Autenticidad y Restricciones
-* Desarrollado sin el uso de frameworks (Bootstrap, Tailwind, React, etc.).
-* Cero dependencias de JavaScript.
-* Maquetado puramente manual sin constructores visuales ni plantillas externas.

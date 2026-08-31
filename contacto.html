@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Imprenta Siva</title>
+
+    <!-- Vinculación del archivo CSS único -->    
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Enlace a Google Fonts para mantener la tipografía uniforme -->   
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Encabezado con menú (Clase 'active' ahora en Contacto) -->    
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
@@ -31,6 +37,7 @@
     </header>
 
     <main class="contacto-page">
+        <!-- Título de la Sección -->
         <section class="page-title">
             <div class="container">
                 <h2>Ponte en Contacto con Nosotros</h2>
@@ -38,14 +45,18 @@
             </div>
         </section>
         
+        <!-- Bloque Principal de Contacto estructurado para Flexbox/Grid -->
         <section class="contacto-container">
             <div class="container contacto-grid">
+
+                <!-- Columna 1: Información de Contacto con los Iconos Requeridos -->
                 <div class="info-contacto">
                     <h3>Datos de Atención</h3>
                     <p class="intro-info">Visítanos en nuestras oficinas o comunícate directamente con nuestros asesores autorizados:</p>
                     
                     <ul class="lista-datos">
-                       
+                        
+                        <!-- Dirección con su Icono -->       
                         <li>
                             <img src="assets/img/logo-direccion.png" id="icono-direccion" class="icono-contacto" alt="Icono de dirección física">
                             <div>
@@ -54,6 +65,7 @@
                             </div>
                         </li>
 
+                        <!-- Teléfonos de WhatsApp con su Icono independiente cada uno -->
                         <li>
                             <img src="assets/img/logo-wasap.png" class="icono-contacto" alt="Icono de WhatsApp empresarial">
                             <div>
@@ -78,6 +90,7 @@
                             </div>
                         </li>
 
+                        <!-- Correo con su Icono -->
                         <li>
                             <img src="assets/img/logo-correo.png" class="icono-contacto" alt="Icono de correo electrónico">
                             <div>
@@ -87,16 +100,19 @@
                         </li>
                     </ul>
 
+                    <!-- Horarios de atención -->
                     <div class="horarios-atencion">
                         <strong>Horarios de Atención:</strong>
                         <p>Lunes a Viernes: 08:00 AM - 06:00 PM<br>Sábados: 09:00 AM - 01:00 PM</p>
                     </div>
                 </div>
                 
+                <!-- Columna 2: Formulario Visual Requerido (Enlazado al Backend) -->
                 <div class="formulario-contacto">
                     <h3>Envíanos un Mensaje</h3>
-
-                    <form action="404.html" method="GET">
+                    
+                    <!-- CORREGIDO: la ruta ahora coincide exactamente con @app.route('/procesar-cotizacion') en app.py -->
+                    <form action="/procesar-cotizacion" method="post">
                         <div class="form-group">
                             <label for="nombre">Nombre Completo:</label>
                             <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
@@ -109,7 +125,7 @@
 
                         <div class="form-group">
                             <label for="servicio">Servicio de Interés:</label>
-                            <select id="servicio" name="servicio">
+                            <select id="servicio" name="servicio" required>
                                 <option value="sri">Documentos Autorizados SRI</option>
                                 <option value="electronica">Facturación Electrónica</option>
                                 <option value="tarjetas">Tarjetería Fina</option>
@@ -122,17 +138,21 @@
                             <label for="mensaje">Detalles de tu Pedido / Cotización:</label>
                             <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí las medidas, cantidad y tipo de material que necesitas..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-submit">Enviar Cotización</button>
+
+                        <!-- Al dar clic, se ejecutan las automatizaciones del backend -->
+                        <button type="submit" class="btn btn-submit">COTIZAR SOLICITUD</button>
                     </form>
                 </div>
 
             </div>
         </section>
         
+        <!-- Sección de Ubicación mediante una Imagen de Mapa -->
         <section class="mapa-section">
             <div class="container">
                 <h3>Nuestra Ubicación en Quinindé</h3>
-                
+        
+                <!-- Aquí puedes colocar una captura de Google Maps de la dirección real en Quinindé -->
                 <div class="mapa-placeholder">
                     <img src="assets/img/mapa-ubicacion.jpg" alt="Mapa de ubicación de Imprenta SIVA en Quinindé, Avenida Jimmy Anchico">
                 </div>
@@ -140,8 +160,9 @@
         </section>
     </main>
     
+    <!-- Pie de página institucional UTEQ -->
     <footer class="main-footer">
-        <p>&copy; UTEQ. Practica: Desarrollo y publicación de un sitio empresarial en Azure App Services - 2026 Imprenta SIVA. - Todos los derechos reservados.</p>
+        <p>&copy; Imprenta SIVA - 2026 - Todos los derechos reservados.</p>
     </footer>
 
 </body>

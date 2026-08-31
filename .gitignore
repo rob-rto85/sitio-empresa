@@ -1,0 +1,21 @@
+# Entorno virtual (se recrea con requirements.txt, no hace falta subirlo)
+.venv/
+venv/
+env/
+
+# Cache de Python
+__pycache__/
+*.pyc
+
+# Base de datos local (en Azure se crea sola al arrancar app.py)
+db_imprenta_siva.db
+
+# PDFs de cotizaciones generados en pruebas locales
+assets/comprobantes/*.pdf
+
+# Archivos de VS Code (opcional, algunos prefieren subir .vscode/settings.json)
+.vscode/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

@@ -1,23 +1,32 @@
+/* ==========================================================================
+   1. VARIABLES GLOBALES Y PALETA DE COLORES (Requerido)
+   ========================================================================== */
 :root {
+    /* Paleta de colores corporativa de Imprenta SIVA */
     --azul-marino: #0B1B3D;
     --rojo-acento: #E63946;
     --violeta: #560BAD;
     --rosado-oscuro: #B5179E;
     
+    /* Colores neutros de soporte */
     --blanco: #FFFFFF;
     --gris-claro: #F8F9FA;
     --gris-texto: #4A5568;
     --negro-suave: #1A202C;
     
+    /* Tipografía y transiciones */
     --fuente-principal: 'Roboto', sans-serif;
     --transicion: all 0.3s ease;
     --sombra-tarjeta: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* ==========================================================================
+   2. RESETS Y MODELO DE CAJA (Requerido)
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Control estricto de márgenes y rellenos */
 }
 
 body {
@@ -45,6 +54,9 @@ a {
     color: inherit;
 }
 
+/* ==========================================================================
+   3. ENCABEZADO Y MENÚ DE NAVEGACIÓN (Flexbox Funcional)
+   ========================================================================== */
 .main-header {
     background-color: var(--azul-marino);
     color: var(--blanco);
@@ -65,7 +77,7 @@ a {
 }
 
 .logo img {
-    height: 100px;
+    height: 100px;  /* Tamaño adaptado para barra superior */
     width: auto;
     border-radius: 5px;
 }
@@ -91,13 +103,17 @@ a {
     transition: var(--transicion);
 }
 
+/* Pseudoclases obligatorias (:hover y clase activa) */
 .main-nav a:hover,
 .main-nav a.active {
     background-color: var(--rosado-oscuro);
     color: var(--blanco);
 }
 
-
+/* ==========================================================================
+   4. MAQUETACIÓN DE PÁGINA DE INICIO (index.html)
+   ========================================================================== */
+/* Banner Principal (Hero Section) */
 .hero-banner {
     background: linear-gradient(rgba(11, 27, 61, 0.85), rgba(86, 11, 173, 0.75)), 
                 url('../img/img7_impresión-Offset.jpg') no-repeat center center/cover;
@@ -123,6 +139,7 @@ a {
     color: var(--gris-claro);
 }
 
+/* Presentación Breve */
 .intro-section {
     background-color: var(--gris-claro);
     text-align: center;
@@ -142,6 +159,7 @@ a {
     margin: 0 auto 30px auto;
 }
 
+/* Botones de Llamada a la Acción (Modelo de Caja) */
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -186,6 +204,9 @@ a {
     background-color: var(--rosado-oscuro);
 }
 
+/* ==========================================================================
+   5. REJILLA DE SERVICIOS Y TARJETAS (CSS Grid, Bordes y Sombras)
+   ========================================================================== */
 .featured-services h2,
 .page-title h2 {
     text-align: center;
@@ -228,14 +249,18 @@ a {
 .service-card img {
     width: 100%;
     height: 220px;
-    object-fit: cover;
+    object-fit: cover; /* Recorte perfecto de imágenes */
 }
 
 .card-actions {
     padding: 20px;
-    margin-top: auto;
+    margin-top: auto; /* Empuja el botón al fondo siempre */
 }
 
+/* ==========================================================================
+   6. ADAPTACIONES EXCLUSIVAS PARA OTROS ARCHIVOS HTML
+   ========================================================================== */
+/* Catálogo Completo (productos.html) */
 .catalog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -283,6 +308,7 @@ a {
     margin-bottom: 15px;
 }
 
+/* Estilos de Contacto (contacto.html) */
 .contacto-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -301,9 +327,10 @@ a {
 }
 
 #icono-direccion {
-    width: 35px; 
+    width: 35px;          /* Por ejemplo, hacerlo un poco más grande */ 
     height: 50px;
 }
+
 
 .icono-contacto {
     width: 35px;
@@ -350,6 +377,7 @@ a {
     border-radius: 8px;
 }
 
+/* Página 404.html */
 .error-container {
     text-align: center;
     padding: 60px 0;
@@ -370,6 +398,9 @@ a {
     margin-bottom: 30px;
 }
 
+/* ==========================================================================
+   7. PIE DE PÁGINA GLOBAL (main-footer)
+   ========================================================================== */
 .main-footer {
     background-color: var(--azul-marino);
     color: var(--blanco);
@@ -495,6 +526,9 @@ a {
     border-color: var(--rosado-oscuro);
 }
 
+/* ==========================================================================
+   8. DISEÑO ADAPTABLE (Media Queries Obligatorias)
+   ========================================================================== */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
